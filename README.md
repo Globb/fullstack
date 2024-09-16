@@ -150,8 +150,8 @@ The logging done in the application is printed out in JSON format, I figured thi
 ### Requirements
 
 I want to use minimal third party libraries and only ended up using two while creating this application:
-1. [Cobra CLI](github.com/spf13/cobra) - this is to make the application easier to launch the server and to run a client to send requests
-1. [Gotest](gotest.tools/v3) - this is used for unit testing, specially for asserts
+1. [Cobra CLI](https://github.com/spf13/cobra) - this is to make the application easier to launch the server and to run a client to send requests
+1. [Gotest](https://pkg.go.dev/gotest.tools/v3) - this is used for unit testing, specially for asserts
 
 This means using Go's:
 1. `log/slog` - Introduced in go 1.21, structure logging so I don't need to use Zerolog (what I have experience using before)
@@ -167,7 +167,7 @@ Unit testing seemed important for the validation checks. I purposely kept the va
 
 I didn't really have any challenges. So I figured I'd write about what I learned. 
 
-1. Go has really made RESTful APIs easier with the new server mux and being able to add `GET` or `POST` to mux handlers. Typically I would use something like [gorilla/mux](github.com/gorilla/mux).
+1. Go has really made RESTful APIs easier with the new server mux and being able to add `GET` or `POST` to mux handlers. Typically I would use something like [gorilla/mux](https://github.com/gorilla/mux).
 1. I've typically used [Zerolog](https://github.com/rs/zerolog) for logging, but Go's new `log/slog` has been amazingly easy to use.
 
 ## Frontend
